@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Backbone.js Library</title>
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+
+
+<h1>Список задач</h1>
+<form action='' id='addTask'>
+    <input type="text" placeholder="Enter new Task">
+    <input type="submit" value="Add task">
+</form>
+<div class='tasks'>
+
+
+
+<script type="text/template" id="taskTemplate">
+    <span><strong> <%= title %> </strong></span> <button class='edit'>Edit</button> <button class='delete'>Delete</button>
+</script>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/underscore.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
