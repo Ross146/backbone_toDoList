@@ -62,8 +62,9 @@
         },
         submit: function (event) {
             event.preventDefault();            
-            var newTaskTitle = $(event.currentTarget).find('input[type=text]').val();
-            var newTask = new App.Models.Task({ title: newTaskTitle});
+            var newTaskTitle = $(event.currentTarget).find('.newtask').val();
+            var newTaskPriority = $(event.currentTarget).find('.newtaskpriority').val();            
+            var newTask = new App.Models.Task({ title: newTaskTitle , priority: newTaskPriority});
             this.collection.add(newTask);
         }
     });

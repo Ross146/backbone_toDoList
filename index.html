@@ -9,8 +9,9 @@
 
 
 <h1>Список задач</h1>
-<form action='' id='addTask'>
-    <input type="text" placeholder="Enter new Task">
+<form action='' id='addTask'>    
+    <input class="newtask" type="text" placeholder="Enter new Task">
+    <input class="newtaskpriority" type="text" placeholder="Task Priority">
     <input type="submit" value="Add task">
 </form>
 <div class='tasks'>
@@ -18,7 +19,9 @@
 
 
 <script type="text/template" id="taskTemplate">
-    <span><strong> <%= title %> </strong></span> <button class='edit'>Edit</button> <button class='delete'>Delete</button>
+<button class='edit'>Edit</button>
+<button class='delete'>Delete</button>
+<span class='list'><%= priority %><strong> <%= title %> </strong></span> 
 </script>
 </div>
 <script src="js/jquery-1.11.3.js"></script>
